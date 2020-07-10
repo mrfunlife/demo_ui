@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyTextField" customModule="FinOS_MCredit" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Sxf-Nk-mme"/>
+                <outlet property="csLeadingPlaceHolder" destination="Y5D-nf-jzo" id="kZb-ei-pd4"/>
+                <outlet property="csTopPlaceHolder" destination="AC3-23-y38" id="L5t-Wd-AfN"/>
+                <outlet property="lblPlaceHolder" destination="2gJ-5a-DAu" id="FL3-Nh-NUi"/>
+                <outlet property="textField" destination="b3n-cK-svW" id="r3B-kT-o6P"/>
+                <outlet property="viewBorder" destination="7pP-RN-7gj" id="EQX-0m-Kwb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7pP-RN-7gj">
+                    <rect key="frame" x="10" y="15" width="394" height="61"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b3n-cK-svW">
+                            <rect key="frame" x="15" y="0.0" width="374" height="61"/>
+                            <color key="textColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="b3n-cK-svW" firstAttribute="leading" secondItem="7pP-RN-7gj" secondAttribute="leading" constant="15" id="BsH-A1-l2g"/>
+                        <constraint firstItem="b3n-cK-svW" firstAttribute="top" secondItem="7pP-RN-7gj" secondAttribute="top" id="gi5-9Z-aTr"/>
+                        <constraint firstAttribute="bottom" secondItem="b3n-cK-svW" secondAttribute="bottom" id="jJJ-0c-XBf"/>
+                        <constraint firstAttribute="trailing" secondItem="b3n-cK-svW" secondAttribute="trailing" constant="5" id="oIU-h8-xNF"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlaceHolder" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gJ-5a-DAu">
+                    <rect key="frame" x="25" y="31" width="78.5" height="17"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2gJ-5a-DAu" firstAttribute="top" secondItem="7pP-RN-7gj" secondAttribute="top" constant="16" id="AC3-23-y38"/>
+                <constraint firstAttribute="trailing" secondItem="7pP-RN-7gj" secondAttribute="trailing" constant="10" id="GCp-ac-vay"/>
+                <constraint firstItem="7pP-RN-7gj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="V30-P0-r4R"/>
+                <constraint firstItem="2gJ-5a-DAu" firstAttribute="leading" secondItem="7pP-RN-7gj" secondAttribute="leading" constant="15" id="Y5D-nf-jzo"/>
+                <constraint firstItem="7pP-RN-7gj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ufl-Ho-yNN"/>
+                <constraint firstAttribute="bottom" secondItem="7pP-RN-7gj" secondAttribute="bottom" constant="5" id="zyX-FS-fmO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-111.49553571428571"/>
+        </view>
+    </objects>
+</document>
